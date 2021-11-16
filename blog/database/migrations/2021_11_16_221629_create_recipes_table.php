@@ -15,10 +15,10 @@ class CreateRecipesTable extends Migration
     {
         Schema::create('recipes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('title');
-            $table->string('material',500);
-            $table->string('procedure',1000);
-            $table->string('quote',100);
+            $table->string('title',100);
+            $table->string('material',4000);
+            $table->string('procedure',4000);
+            $table->string('quote',200);
             $table->timestamps();
         });
     }

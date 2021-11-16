@@ -9,7 +9,7 @@
     <body>
         <h1>晩御飯、なんでもいいや・・・</h1>
         <div class='list'>
-            @foreach($recipes as $recipe)
+            @foreach($recipe as $recipe)
                 <div class='recipe'/>
                     <a href="/recipe/{{ $recipe->id }}">{{ $recipe->title }}</a>
                     <a href="/recipe/{{ $recipe->id }}">{{ $recipe->material }}</a>

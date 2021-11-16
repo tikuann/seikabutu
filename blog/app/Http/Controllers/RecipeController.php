@@ -20,9 +20,9 @@ public function show(Recipe $recipe)
         
 }
 
-public function recipes(Recipe $recipe)
+public function recipe(Recipe $recipe)
 {
-    return view('recipes')->with(['recipes'=>$recipe->get()]);
+    return view('recipe')->with(['recipe'=>$recipe->get()]);
 }
 public function create(Recipe $recipe)
 {
@@ -39,7 +39,7 @@ public function edit(Recipe $recipe)
 {
     return view('edit')->with(['recipe' => $recipe]);
 }
-public function update(RecipeRequest $request, Recipe $recipe)
+public function update(Request $request, Recipe $recipe)
 {
     $input_recipe = $request['recipe'];
     $recipe->fill($input_recipe)->save();
