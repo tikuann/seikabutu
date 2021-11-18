@@ -14,4 +14,10 @@ class recipe extends Model
     'procedure',
     'quote',
 ];
+
+//カテゴリーに対するリレーション
+public function categories(){
+    
+    return $this->belongsToMany('App\Category');
+}
 }

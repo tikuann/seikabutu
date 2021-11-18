@@ -30,7 +30,18 @@
                     <h3>引用</h3>
                     <input type="text" name="recipe[quote]" placeholder="引用" value="{{ old('recipe.quote') }}"/>
                 <p class="title__error" style="color:red">{{ $errors->first('recipe.quote') }}</p>
-                </div>        
+                </div> 
+                <h2>カテゴリー</h2>
+                @foreach($category as $item)
+
+                   <label>
+                   <input type="checkbox" value="{{ $item->id }}" name="categories_array[]">
+                       {{$item->category_name}}
+                   </input>
+                   </label>
+            
+                @endforeach         
+                </div>
                 <input type="submit" value="保存"/>
             </form>
             <div class="back">[<a href="/list">back</a>]</div>

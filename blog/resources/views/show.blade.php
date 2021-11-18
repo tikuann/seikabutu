@@ -24,6 +24,13 @@
             <div class="quote">
                 <h5>引用</h4>
                 <p>{{ $recipe->quote}}</p>
+            <div class="content__category">
+                <h5>カテゴリー</h5>
+                {{-- このレシピに関連するカテゴリーの数だけ繰り返す --}}
+                @foreach($recipe->categories as $category)   
+                {{ $category->category_name }}
+                @endforeach
+            </div>    
                  <p class="edit">[<a href="/recipe/{{ $recipe->id }}/edit">edit</a>]</p>  
             </div>
         </div>
