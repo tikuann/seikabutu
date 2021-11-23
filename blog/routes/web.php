@@ -8,3 +8,4 @@ Route::delete('/recipe/{recipe}', 'RecipeController@delete');
 Route::get('/recipe/{recipe}', 'RecipeController@show');
 Route::get('/recipe', 'RecipeController@recipe');
 Route::post('/recuoe', 'RecipeController@store');
+Auth::routes();

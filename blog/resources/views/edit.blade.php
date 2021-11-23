@@ -5,8 +5,10 @@
         <title>晩御飯</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+                <link rel="stylesheet" href="{{('/css/style_edit.css')}}"> 
     </head>
 <body>
+    <div class='main'>
     <h1 class="title">編集画面</h1>
     <div class="content">
         <form action="/recipe/{{$recipe->id}}" method="POST">
@@ -30,5 +32,6 @@
             </div>
             <input type="submit" value="保存">
         </form>
+    </div>
     </div>
 </body>

@@ -5,6 +5,7 @@
         <title>晩御飯</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+               <link rel="stylesheet" href="{{('/css/style_create.css')}}">
     </head>
     <body>
         <h1>晩御飯、なんでもいいや・・・</h1>
@@ -41,8 +42,8 @@
                    </label>
             
                 @endforeach         
-                </div>
                 <input type="submit" value="保存"/>
+                </div>
             </form>
             <div class="back">[<a href="/list">back</a>]</div>
         </div>

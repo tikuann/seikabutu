@@ -6,9 +6,10 @@
         <title>晩御飯、なんでもいいや・・・</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="/css/app.css">
-    </head>
+        <link rel="stylesheet" href="{{('/css/style_show.css')}}">   
+        </head>
     <body>
+        <div class='main'>
         <h1 class="title">
             {{ $recipe->title }}
         </h1>
@@ -36,6 +37,7 @@
         </div>
         <div class="footer">
             <a href="/">戻る</a>
+        </div>
         </div>
     </body>
 </html>
